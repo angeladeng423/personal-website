@@ -1,0 +1,27 @@
+#skill{
+    background-color: #A0ACB0;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+#skill p{
+    margin: 0;
+    font-weight: 800;
+    font-size: 10px;
+    font-weight: 800px;
+    color: #313D40;
+}
+
+@media screen and (min-width: 600px){
+    #skill p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #skill p{
+        font-size: 15px;
+    }
+}

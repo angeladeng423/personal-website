@@ -4,7 +4,7 @@ import "./Skills.css";
 function Skills(props){
     return(
         <div id = "skill">
-            {props.skill}
+            <p>{props.skill}</p>
         </div>
     )
 }

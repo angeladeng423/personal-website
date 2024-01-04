@@ -8,22 +8,15 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Set the width of the scrollbar */
+  width: 15px;
 }
 
-/* Handle portion of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #B3CFD7; /* Set the color of the scrollbar thumb */
-  border-radius: 6px; /* Set the border radius of the thumb */
+  background-color: darkgrey;
+  border-radius: 2px;
+  max-height: 60px;
 }
 
-/* Track portion of the scrollbar */
 ::-webkit-scrollbar-track {
-  background-color: #F5F5F5; /* Set the color of the scrollbar track */
-  border-radius: 6px; /* Set the border radius of the track */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #7FABBB; /* Set the color of the thumb on hover */
+  background-color: lightgrey; 
 }
