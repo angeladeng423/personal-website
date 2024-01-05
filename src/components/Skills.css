@@ -6,6 +6,11 @@
     margin-top: 1vh;
 }
 
+#skill:hover{
+    background-color: #868F93;
+    cursor: pointer;
+}
+
 #skill p{
     margin: 0;
     font-weight: 800;
@@ -17,6 +22,12 @@
 @media screen and (min-width: 600px){
     #skill p{
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #skill p{
+        font-size: 10px;
     }
 }
 

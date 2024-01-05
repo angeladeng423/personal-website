@@ -1,0 +1,72 @@
+.hidden{
+    opacity: 0%;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show{
+    transform: translateX(0);
+    opacity: 90%;
+}
+
+#project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 10px;
+}
+
+#img-body, #skill-body{
+    display: flex;
+    flex-direction: row;
+}
+
+#skill-body{
+    margin-top: 1vh;
+}
+
+#project img{
+    width: 35vw;
+}
+
+#container{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+#container h1{
+    font-weight: 600;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+}
+
+#container #git-img{
+    margin-left: 1vw;
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (min-width: 800px){
+    #project{
+        font-size: 12px;
+    }
+
+    #container #git-img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #project{
+        font-size: 15px;
+    }
+}
