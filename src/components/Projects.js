@@ -1,9 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import githubImg from '../images/github.png';
 import "./Projects.css";
+import Skills from "./Skills";
 
 export default function Projects(props) {
+    const [skills, setSkills] = useState([""])
+
     useEffect(() => {
+        setSkills(props.skills)
+
         const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -25,10 +30,17 @@ export default function Projects(props) {
     return (
         <div>
             <section className = "hidden" id = "project">
-                <img src = {props.img} alt = "cover-img"></img>
-                <div id = "container">
-                    <div id = "info"><h1>{props.title}</h1> <a href = {props.link}><img id = "git-img" src = {githubImg} alt = "github-icon"></img></a></div>
-                    <p>{props.desc}</p>
+                <div id = "img-body">
+                    <img src = {props.img} alt = "cover-img"></img>
+                    <div id = "container">
+                        <div id = "info"><h1>{props.title}</h1> <a href = {props.link}><img id = "git-img" src = {githubImg} alt = "github-icon"></img></a></div>
+                        <p>{props.desc}</p>
+                    </div>
+                </div>
+                <div id = "skill-body">
+                    {skills.map((skilltxt, index) => (
+                        <div key={index}><Skills skill = {skilltxt}/></div>
+                    ))}
                 </div>
             </section>
         </div>

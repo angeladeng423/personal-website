@@ -6,12 +6,20 @@
     margin-top: 1vh;
 }
 
-#skill:hover{
+#skill:hover, #clicked:hover{
     background-color: #868F93;
     cursor: pointer;
 }
 
-#skill p{
+#clicked{
+    background-color: #868F93;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+#skill p, #clicked p{
     margin: 0;
     font-weight: 800;
     font-size: 10px;
