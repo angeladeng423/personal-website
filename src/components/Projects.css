@@ -36,11 +36,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 250px;
 }
 
 #container h1{
     font-weight: 600;
+    margin-bottom: 0.5vh;
+}
+
+#container h3{
+    margin-top: 0;
+    padding: 0;
+}
+
+#container h3:hover{
+    cursor: pointer;
 }
 
 #info{
@@ -49,6 +59,7 @@
 }
 
 #container #git-img{
+    padding-top: 1vh;
     margin-left: 1vw;
     width: 18px;
     height: 18px;

@@ -34,6 +34,7 @@ export default function Projects(props) {
                     <img src = {props.img} alt = "cover-img"></img>
                     <div id = "container">
                         <div id = "info"><h1>{props.title}</h1> <a href = {props.link}><img id = "git-img" src = {githubImg} alt = "github-icon"></img></a></div>
+                        <h3>Learn More...</h3>
                         <p>{props.desc}</p>
                     </div>
                 </div>
