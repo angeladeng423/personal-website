@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import githubImg from '../images/github.png';
+import Popup from "./Popup";
 import "./Projects.css";
 import Skills from "./Skills";
 
 export default function Projects(props) {
     const [skills, setSkills] = useState([""])
+    const [addButtonPopup, setAddButtonPopup] = useState(false);
 
     useEffect(() => {
         setSkills(props.skills)
@@ -34,7 +36,7 @@ export default function Projects(props) {
                     <img src = {props.img} alt = "cover-img"></img>
                     <div id = "container">
                         <div id = "info"><h1>{props.title}</h1> <a href = {props.link}><img id = "git-img" src = {githubImg} alt = "github-icon"></img></a></div>
-                        <h3>Learn More...</h3>
+                        <h3 onClick={() => setAddButtonPopup(true)}>Learn More...</h3>
                         <p>{props.desc}</p>
                     </div>
                 </div>
@@ -44,6 +46,11 @@ export default function Projects(props) {
                     ))}
                 </div>
             </section>
+            <Popup
+                title = {props.title}
+                date = {props.date}
+                description = {props.detailed}
+                trigger = {addButtonPopup} setTrigger = {setAddButtonPopup}/>
         </div>
     );
 }

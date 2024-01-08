@@ -34,6 +34,17 @@
 }
 
 #bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    margin-top: 0;
     background-color: #070417;
-    color: white;
+    color: lightgrey;
+    font-size: 12px;
+}
+
+#bottom p{
+    padding: 0;
+    margin: 0;
 }

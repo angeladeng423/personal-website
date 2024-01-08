@@ -1,0 +1,13 @@
+#about-me{
+    margin-top: 3vh;
+    width: 50vh;
+}
+
+#about-me h3{
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+#about-me p, #about-me h3{
+    text-align: center;
+}

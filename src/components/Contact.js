@@ -11,7 +11,6 @@ export default function Contact(){
             <div id = "footer">
                 <div id = "contact-text">
                 <h2>Connect With Me!</h2>
-                <p>Hi there!</p>
                 <p>I'm always looking to network, chat, or collaborate on any projects.</p>
                 <p>My resume is linked below, alongside my github and linkedIn.</p>
                 </div>

@@ -1,9 +1,16 @@
 #ocean-bot{
     width: 100%;
-    height: 2500px;
+    height: 150vh;
     margin-top: -0.5vh;
     z-index: inherit;
-    background: linear-gradient(to bottom, #B3CFD7, #0B1D23);
+    background: linear-gradient(to bottom, #B3CFD7, #153743);
+}
+
+@media screen and (min-width: 1200px){
+    #ocean-bot{
+        height: 170vh;
+        background: linear-gradient(to bottom, #B3CFD7, #1D4958);
+    }
 }
 
 #ocean{
